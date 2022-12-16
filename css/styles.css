@@ -49,6 +49,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -71,6 +75,8 @@ p {
 
 /* -----Button----- */
 .btn {
+  display: block;
+
   min-width: 160px;
   height: 40px;
   padding: 0;
@@ -146,7 +152,7 @@ p {
   color: var(--black-title);
 }
 
-.socials-list-link {
+.hero-list-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -155,8 +161,8 @@ p {
   color: var(--black-title);
 }
 
-.socials-list-link:hover,
-.socials-list-link:focus {
+.hero-list-link:hover,
+.hero-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -210,7 +216,22 @@ p {
 
 /* -----Hero section----- */
 
+.container-hero {
+  display: flex;
+}
+
+.hero-title-container {
+  flex-grow: 1;
+  padding-left: 96px;
+}
+
+.pre-title-hero {
+  padding-top: 272px;
+}
+
 .hero-title {
+  margin-top: 20px;
+
   font-family: 'Raleway', 'Sans Serif';
   font-style: normal;
   font-weight: 700;
@@ -220,14 +241,65 @@ p {
   color: var(--white-title);
 }
 
+.hero-list {
+  width: 93px;
+  background-color: #fff;
+}
+
+.section-text-hero {
+  margin-bottom: 20px;
+  padding-bottom: 206px;
+
+  width: 380px;
+}
+
 /* -----About Us Section----- */
 
+.about-us-section {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+
+.container-about-us {
+  display: flex;
+}
+
+.about-us-list {
+  display: flex;
+
+  margin-right: 64px;
+}
+
+.about-us-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-title {
+  margin-top: 20px;
+}
+
+.about-us-text {
+  margin-top: 20px;
+}
+
 .about-us-description {
+  margin-top: 20px;
+  width: 500px;
+
   font-size: 14px;
   line-height: 1.86;
 }
 
+.about-us-btn {
+  margin-top: 50px;
+}
+
 /* -----Prices Section----- */
+
+.prices-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 
 .reasons-numbers {
   font-weight: 700;
@@ -242,6 +314,33 @@ p {
   font-size: 11px;
   line-height: 1.36;
   color: var(--black);
+}
+
+.prices-title {
+  margin-top: 20px;
+}
+
+.prices-list-container {
+  display: flex;
+}
+
+.prices-list {
+  margin-top: 44px;
+  padding: 30px 40px;
+  width: 50%;
+}
+
+.prices-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-list-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.prices-btn {
+  margin: 50px auto 0 auto;
 }
 
 /* -----Employees Section----- */
