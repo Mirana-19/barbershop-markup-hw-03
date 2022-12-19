@@ -345,7 +345,33 @@ img {
 
 /* -----Employees Section----- */
 
+.employee-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.employee-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.employee-list-item {
+  text-align: center;
+
+  flex-basis: calc((100% - 2 * 30) / 3);
+  margin: 15px;
+}
+
 .employee {
+  margin-top: 30px;
+
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -354,6 +380,8 @@ img {
 }
 
 .job-title {
+  margin-top: 8px;
+
   font-size: 14px;
   line-height: 1.36;
   color: var(--accent-color);
