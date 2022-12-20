@@ -352,31 +352,33 @@ img {
 
 .employee-title {
   margin-top: 20px;
-  margin-bottom: 44px;
 }
 
 .employee-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
-  margin: -15px;
+  margin-top: 44px;
 }
 
 .employee-list-item {
-  text-align: center;
+  flex-basis: calc((100% - 2 * 30px) / 3);
 
-  flex-basis: calc((100% - 2 * 30) / 3);
-  margin: 15px;
+  text-align: center;
 }
 
 .employee {
-  margin-top: 30px;
-
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 1.38;
   color: var(--black);
+}
+
+.employee-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .job-title {
@@ -387,16 +389,91 @@ img {
   color: var(--accent-color);
 }
 
+/* -----Gallery Section----- */
+
+.gallery-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 44px;
+}
+
+.gallery-list-item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
 /* -----Online Appointment Section----- */
 
+.appointment-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-container {
+  width: 600px;
+
+  padding-left: 15px;
+}
+
 /* -----Contacts Section----- */
+.contacts-container {
+  width: 600px;
+  padding-left: 99px;
+  padding-right: 15px;
+}
+
+.contacts-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .address {
   font-style: normal;
 }
 
+.address-list-item:first-child {
+  margin-top: 40px;
+}
+
+.address-list-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.pre-title-contacts {
+  margin-top: 70px;
+}
+
+.text-contacts {
+  margin-top: 20px;
+}
+
 /* -----Footer----- */
+.footer-container {
+  display: flex;
+}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-right: 40px;
 }
